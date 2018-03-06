@@ -10,6 +10,13 @@
 
 @interface CacheRequestManager : NSObject
 
+
+/**
+ 检查文件是否存在
+
+ @param FileName 需检查的文件名
+ @return 结果
+ */
 -(Boolean)CheckWithFileName:(NSString*)FileName;
 
 @end

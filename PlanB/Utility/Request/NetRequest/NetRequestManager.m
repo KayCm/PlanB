@@ -55,6 +55,7 @@
         NSLog(@"请求失败：%@", error);
         
         if(error)ErrorBlock(error);
+        
     }];
     
 }
@@ -120,9 +121,7 @@
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         
         NSLog(@"下载完成");
-        
-        
-        
+
         if (error) {
             
             if (ErrorBlock) ErrorBlock(error);
@@ -145,7 +144,6 @@
     }];
     
     [downloadTask resume];
-    
     
 }
 
