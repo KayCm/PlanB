@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		417AC93DCC2422171BD98601 /* libPods-PlanB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E3EC93CCE02F157BC839D /* libPods-PlanB.a */; };
+		24BFE16271651E9FFD079236 /* Pods_PlanB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5132CF9513B812A91919FAB /* Pods_PlanB.framework */; };
 		ABF6E3E8204E7E010009231C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E3E7204E7E010009231C /* AppDelegate.m */; };
 		ABF6E3EB204E7E010009231C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E3EA204E7E010009231C /* ViewController.m */; };
 		ABF6E3EE204E7E010009231C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF6E3EC204E7E010009231C /* Main.storyboard */; };
 		ABF6E3F0204E7E010009231C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF6E3EF204E7E010009231C /* Assets.xcassets */; };
 		ABF6E3F3204E7E010009231C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF6E3F1204E7E010009231C /* LaunchScreen.storyboard */; };
 		ABF6E3F6204E7E010009231C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E3F5204E7E010009231C /* main.m */; };
+		ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E408204E9DD90009231C /* CacheRequestManager.m */; };
+		ABF6E40D204E9DD90009231C /* NetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40B204E9DD90009231C /* NetRequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25BC25D888F3087A3146BA74 /* Pods-PlanB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlanB/Pods-PlanB.debug.xcconfig"; sourceTree = "<group>"; };
-		654E3EC93CCE02F157BC839D /* libPods-PlanB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAC5374F5841A07209B78AD /* Pods-PlanB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanB.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlanB/Pods-PlanB.release.xcconfig"; sourceTree = "<group>"; };
 		ABF6E3E3204E7E000009231C /* PlanB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF6E3E6204E7E010009231C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,6 +31,11 @@
 		ABF6E3F2204E7E010009231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABF6E3F4204E7E010009231C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABF6E3F5204E7E010009231C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABF6E407204E9DD90009231C /* CacheRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheRequestManager.h; sourceTree = "<group>"; };
+		ABF6E408204E9DD90009231C /* CacheRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheRequestManager.m; sourceTree = "<group>"; };
+		ABF6E40A204E9DD90009231C /* NetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestManager.h; sourceTree = "<group>"; };
+		ABF6E40B204E9DD90009231C /* NetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestManager.m; sourceTree = "<group>"; };
+		D5132CF9513B812A91919FAB /* Pods_PlanB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417AC93DCC2422171BD98601 /* libPods-PlanB.a in Frameworks */,
+				24BFE16271651E9FFD079236 /* Pods_PlanB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +71,9 @@
 		ABF6E3E5204E7E010009231C /* PlanB */ = {
 			isa = PBXGroup;
 			children = (
-				ABF6E400204E80670009231C /* Plan */,
 				ABF6E3FF204E805F0009231C /* Login */,
+				ABF6E400204E80670009231C /* Plan */,
+				ABF6E404204E9D450009231C /* Utility */,
 				ABF6E3FC204E7FC20009231C /* Supporting Files */,
 			);
 			path = PlanB;
@@ -102,6 +109,41 @@
 			path = Plan;
 			sourceTree = "<group>";
 		};
+		ABF6E404204E9D450009231C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ABF6E405204E9DD90009231C /* Request */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		ABF6E405204E9DD90009231C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ABF6E406204E9DD90009231C /* CacheRequest */,
+				ABF6E409204E9DD90009231C /* NetRequest */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		ABF6E406204E9DD90009231C /* CacheRequest */ = {
+			isa = PBXGroup;
+			children = (
+				ABF6E407204E9DD90009231C /* CacheRequestManager.h */,
+				ABF6E408204E9DD90009231C /* CacheRequestManager.m */,
+			);
+			path = CacheRequest;
+			sourceTree = "<group>";
+		};
+		ABF6E409204E9DD90009231C /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				ABF6E40A204E9DD90009231C /* NetRequestManager.h */,
+				ABF6E40B204E9DD90009231C /* NetRequestManager.m */,
+			);
+			path = NetRequest;
+			sourceTree = "<group>";
+		};
 		B8665B711EF583FE0D40E288 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +156,7 @@
 		E3EC110B65C4A6381F069325 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				654E3EC93CCE02F157BC839D /* libPods-PlanB.a */,
+				D5132CF9513B812A91919FAB /* Pods_PlanB.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +195,7 @@
 				TargetAttributes = {
 					ABF6E3E2204E7E000009231C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -195,9 +238,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlanB/Pods-PlanB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -247,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF6E40D204E9DD90009231C /* NetRequestManager.m in Sources */,
+				ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */,
 				ABF6E3EB204E7E010009231C /* ViewController.m in Sources */,
 				ABF6E3F6204E7E010009231C /* main.m in Sources */,
 				ABF6E3E8204E7E010009231C /* AppDelegate.m in Sources */,
@@ -384,13 +438,18 @@
 			baseConfigurationReference = 25BC25D888F3087A3146BA74 /* Pods-PlanB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 5BJM9LWQJQ;
 				INFOPLIST_FILE = "$(SRCROOT)/PlanB/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COM.M1989.PlanB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanB/Login/PlanB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -400,13 +459,17 @@
 			baseConfigurationReference = 7BAC5374F5841A07209B78AD /* Pods-PlanB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 5BJM9LWQJQ;
 				INFOPLIST_FILE = "$(SRCROOT)/PlanB/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COM.M1989.PlanB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanB/Login/PlanB-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
