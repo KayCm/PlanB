@@ -16,6 +16,7 @@
 		ABF6E3F6204E7E010009231C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E3F5204E7E010009231C /* main.m */; };
 		ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E408204E9DD90009231C /* CacheRequestManager.m */; };
 		ABF6E40D204E9DD90009231C /* NetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40B204E9DD90009231C /* NetRequestManager.m */; };
+		ABF6E40F204E9F2C0009231C /* LoginSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40E204E9F2C0009231C /* LoginSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		ABF6E408204E9DD90009231C /* CacheRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheRequestManager.m; sourceTree = "<group>"; };
 		ABF6E40A204E9DD90009231C /* NetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestManager.h; sourceTree = "<group>"; };
 		ABF6E40B204E9DD90009231C /* NetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestManager.m; sourceTree = "<group>"; };
+		ABF6E40E204E9F2C0009231C /* LoginSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSwift.swift; sourceTree = "<group>"; };
+		ABF6E410204E9F620009231C /* PlanB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanB-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5132CF9513B812A91919FAB /* Pods_PlanB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +101,8 @@
 			children = (
 				ABF6E3E9204E7E010009231C /* ViewController.h */,
 				ABF6E3EA204E7E010009231C /* ViewController.m */,
+				ABF6E40E204E9F2C0009231C /* LoginSwift.swift */,
+				ABF6E410204E9F620009231C /* PlanB-Bridging-Header.h */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				ABF6E3EB204E7E010009231C /* ViewController.m in Sources */,
 				ABF6E3F6204E7E010009231C /* main.m in Sources */,
 				ABF6E3E8204E7E010009231C /* AppDelegate.m in Sources */,
+				ABF6E40F204E9F2C0009231C /* LoginSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5BJM9LWQJQ;
 				INFOPLIST_FILE = "$(SRCROOT)/PlanB/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -461,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5BJM9LWQJQ;
 				INFOPLIST_FILE = "$(SRCROOT)/PlanB/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
