@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PlanB-Swift.h"
 #import <PermissionScope/PermissionScope-Swift.h>
+#import "Masonry.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) PermissionScope *multiPscope;
@@ -34,6 +35,10 @@
 }
 
 
+-(void)backgroundVideoView{
+    
+}
+    
 -(void)ViewSetup{
     
     [self.navigationController.navigationBar setHidden:YES];
@@ -41,10 +46,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    LoginSwift *Ls = [[LoginSwift alloc] initWithFrame:CGRectMake(30, 30, 300, 300)];
-    
-    
-    [self.view addSubview:Ls];
+    LoginSwift *Login = [LoginSwift new];
+    [self.view addSubview:Login];
+    [Login mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY);
+        make.width.equalTo(@300);
+        make.height.equalTo(@200);
+    }];
     
 }
 

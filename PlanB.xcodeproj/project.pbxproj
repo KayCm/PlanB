@@ -17,6 +17,7 @@
 		ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E408204E9DD90009231C /* CacheRequestManager.m */; };
 		ABF6E40D204E9DD90009231C /* NetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40B204E9DD90009231C /* NetRequestManager.m */; };
 		ABF6E40F204E9F2C0009231C /* LoginSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40E204E9F2C0009231C /* LoginSwift.swift */; };
+		BB6E4DD6204FAF9600D6177E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E4DD5204FAF9600D6177E /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		ABF6E40E204E9F2C0009231C /* LoginSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSwift.swift; sourceTree = "<group>"; };
 		ABF6E410204E9F620009231C /* PlanB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanB-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABF6E411204F7E460009231C /* PlanB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlanB.entitlements; sourceTree = "<group>"; };
+		BB6E4DD4204FAF9600D6177E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BB6E4DD5204FAF9600D6177E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D5132CF9513B812A91919FAB /* Pods_PlanB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,8 @@
 		ABF6E400204E80670009231C /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				BB6E4DD4204FAF9600D6177E /* MainViewController.h */,
+				BB6E4DD5204FAF9600D6177E /* MainViewController.m */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlanB/Pods-PlanB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PermissionScope/PermissionScope.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -260,6 +266,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionScope.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -317,6 +324,7 @@
 				ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */,
 				ABF6E3EB204E7E010009231C /* ViewController.m in Sources */,
 				ABF6E3F6204E7E010009231C /* main.m in Sources */,
+				BB6E4DD6204FAF9600D6177E /* MainViewController.m in Sources */,
 				ABF6E3E8204E7E010009231C /* AppDelegate.m in Sources */,
 				ABF6E40F204E9F2C0009231C /* LoginSwift.swift in Sources */,
 			);

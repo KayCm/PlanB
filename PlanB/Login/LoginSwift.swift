@@ -25,7 +25,7 @@ class LoginSwift: UIView {
         usrText.borderActiveColor = UIColor.darkGray
         self.addSubview(usrText)
         
-        let pwdText = HoshiTextField(frame:CGRect(x:0,y:100,width:300,height:50))
+        let pwdText = HoshiTextField(frame:CGRect(x:0,y:80,width:300,height:50))
         pwdText.placeholder = "PassWord"
         pwdText.placeholderColor = UIColor.darkGray
         pwdText.borderInactiveColor = UIColor.lightGray
