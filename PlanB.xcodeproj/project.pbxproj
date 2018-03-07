@@ -17,6 +17,8 @@
 		ABF6E40C204E9DD90009231C /* CacheRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E408204E9DD90009231C /* CacheRequestManager.m */; };
 		ABF6E40D204E9DD90009231C /* NetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40B204E9DD90009231C /* NetRequestManager.m */; };
 		ABF6E40F204E9F2C0009231C /* LoginSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF6E40E204E9F2C0009231C /* LoginSwift.swift */; };
+		ABF6E413204FE0900009231C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF6E412204FE0900009231C /* MediaPlayer.framework */; };
+		ABF6E416204FE2B30009231C /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABF6E415204FE2B30009231C /* qidong.mp4 */; };
 		BB6E4DDA204FAFD600D6177E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E4DD9204FAFD600D6177E /* MainViewController.m */; };
 		BB6E4DDD204FCA0D00D6177E /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E4DDC204FCA0D00D6177E /* LoginViewModel.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		ABF6E40E204E9F2C0009231C /* LoginSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSwift.swift; sourceTree = "<group>"; };
 		ABF6E410204E9F620009231C /* PlanB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanB-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABF6E411204F7E460009231C /* PlanB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlanB.entitlements; sourceTree = "<group>"; };
+		ABF6E412204FE0900009231C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		ABF6E415204FE2B30009231C /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
 		BB6E4DD8204FAFD600D6177E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		BB6E4DD9204FAFD600D6177E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		BB6E4DDB204FCA0D00D6177E /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF6E413204FE0900009231C /* MediaPlayer.framework in Frameworks */,
 				24BFE16271651E9FFD079236 /* Pods_PlanB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +86,7 @@
 		ABF6E3E5204E7E010009231C /* PlanB */ = {
 			isa = PBXGroup;
 			children = (
+				ABF6E415204FE2B30009231C /* qidong.mp4 */,
 				ABF6E411204F7E460009231C /* PlanB.entitlements */,
 				ABF6E3FF204E805F0009231C /* Login */,
 				BB6E4DD7204FAFC500D6177E /* Main */,
@@ -173,6 +179,7 @@
 		E3EC110B65C4A6381F069325 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABF6E412204FE0900009231C /* MediaPlayer.framework */,
 				D5132CF9513B812A91919FAB /* Pods_PlanB.framework */,
 			);
 			name = Frameworks;
@@ -248,6 +255,7 @@
 				ABF6E3F3204E7E010009231C /* LaunchScreen.storyboard in Resources */,
 				ABF6E3F0204E7E010009231C /* Assets.xcassets in Resources */,
 				ABF6E3EE204E7E010009231C /* Main.storyboard in Resources */,
+				ABF6E416204FE2B30009231C /* qidong.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

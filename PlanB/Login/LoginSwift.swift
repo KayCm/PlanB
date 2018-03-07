@@ -29,26 +29,26 @@ class LoginSwift: UIView ,UITextFieldDelegate{
         
         self.backgroundColor = UIColor.clear
         
-        usrText = HoshiTextField(frame:CGRect(x:0,y:0,width:300,height:50))
+        usrText = HoshiTextField(frame:CGRect(x:0,y:0,width:230,height:50))
         usrText.textColor = UIColor.white
         usrText.placeholder = "UserName"
-        usrText.placeholderColor = UIColor.darkGray
-        usrText.borderInactiveColor = UIColor.white
-        usrText.borderActiveColor = UIColor.lightGray
+        usrText.placeholderColor = UIColor.white
+        usrText.borderInactiveColor = UIColor.lightGray
+        usrText.borderActiveColor = UIColor.white
         self.addSubview(usrText)
         
-        pwdText = HoshiTextField(frame:CGRect(x:0,y:70,width:300,height:50))
+        pwdText = HoshiTextField(frame:CGRect(x:0,y:55,width:230,height:50))
         pwdText.textColor = UIColor.white
         pwdText.placeholder = "PassWord"
-        pwdText.placeholderColor = UIColor.darkGray
-        pwdText.borderInactiveColor = UIColor.white
-        pwdText.borderActiveColor = UIColor.lightGray
+        pwdText.placeholderColor = UIColor.white
+        pwdText.borderInactiveColor = UIColor.lightGray
+        pwdText.borderActiveColor = UIColor.white
         pwdText.isSecureTextEntry = true
         pwdText.delegate = self
         self.addSubview(pwdText)
         
         btn = UIButton(type:.custom)
-        btn.frame = CGRect(x:0,y:140,width:300,height:50)
+        btn.frame = CGRect(x:0,y:120,width:230,height:50)
         btn.setTitle("Confirm", for:.normal)
         btn.setTitleColor(UIColor.white, for: .normal) //普通状态下文字的颜色
         btn.setTitleColor(UIColor.gray, for: .disabled) //禁用状态下文字的颜色
