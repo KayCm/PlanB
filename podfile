@@ -7,4 +7,6 @@ target 'PlanB' do
     pod 'SVProgressHUD'
     pod 'TextFieldEffects'
     pod 'PermissionScope'
+    pod 'Masonry'
+    pod 'JDStatusBarNotification'
 end
