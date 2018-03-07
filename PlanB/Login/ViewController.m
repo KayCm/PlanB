@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 #import "PlanB-Swift.h"
+#import <PermissionScope/PermissionScope-Swift.h>
 
 @interface ViewController ()
-
+@property (nonatomic, strong) PermissionScope *multiPscope;
 @end
 
 @implementation ViewController
@@ -19,7 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self PermissionView];
+    
     [self ViewSetup];
+    
+
 }
 
 
@@ -27,6 +32,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 -(void)ViewSetup{
     
@@ -40,6 +46,21 @@
     
     [self.view addSubview:Ls];
     
+}
+
+-(void)PermissionView{
+    
+    self.multiPscope = [[PermissionScope alloc]init];
+    self.multiPscope.headerLabel.text = @"Hey!~";
+    self.multiPscope.bodyLabel.text = @"为了您更好的使用,\r\n我们需要向您请求以下权限.";
+    [self.multiPscope addPermission:[[LocationWhileInUsePermission alloc]init] message:@"Location"];
+    [self.multiPscope addPermission:[[CameraPermission alloc] init] message:@"Camera"];
+    [self.multiPscope addPermission:[[PhotosPermission alloc] init] message:@"Album"];
+    [self.multiPscope show:^(BOOL completed, NSArray *results) {
+        NSLog(@"Changed: %@ - %@", @(completed), results);
+    } cancelled:^(NSArray *x) {
+        NSLog(@"cancelled");
+    }];
 }
 
 

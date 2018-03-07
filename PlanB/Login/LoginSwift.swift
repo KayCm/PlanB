@@ -18,7 +18,7 @@ class LoginSwift: UIView {
         
         self.backgroundColor = UIColor.white
         
-        let usrText = HoshiTextField(frame:CGRect(x:0,y:50,width:300,height:50))
+        let usrText = HoshiTextField(frame:CGRect(x:0,y:0,width:300,height:50))
         usrText.placeholder = "UserName"
         usrText.placeholderColor = UIColor.darkGray
         usrText.borderInactiveColor = UIColor.lightGray
